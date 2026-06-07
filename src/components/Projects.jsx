@@ -33,7 +33,22 @@ const projectsData = [
       'Styled fluid responsive viewports using Material UI grid layouts.',
     ],
     github: 'https://github.com/neha220800/',
-    
+  },
+  {
+    title: 'AdhyaAura . Jewels',
+    type: 'Frontend PureHTML Project',
+    emoji: '💎',
+    color: '#F59E0B',
+    tech: ['HTML', 'PureCSS'],
+    image: '/image-1780845046697.png',
+    description: 'A polished static landing page built with PureCSS and HTML, showcasing jewellery branding and product sections.',
+    highlights: [
+      'Created a responsive layout using PureCSS utility classes and semantic HTML.',
+      'Styled the landing page with an elegant jewellery brand theme and polished navigation.',
+      'Optimized page structure for accessibility and fast load performance.',
+      'Prepared the site for deployment as a static portfolio showcase.',
+    ],
+    live: 'https://enchanting-beignet-3f2b3a.netlify.app/',
   },
 ];
 
@@ -72,6 +87,17 @@ const ProjectCard = ({ project, index }) => {
       />
 
       <div className="p-7 flex flex-col h-full">
+        {project.image && (
+          <div className="mb-5 overflow-hidden rounded-3xl h-52 relative">
+            <img
+              src={project.image}
+              alt={`${project.title} screenshot`}
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black/10" />
+          </div>
+        )}
+
         {/* Card Header */}
         <div className="flex items-start justify-between mb-5">
           <div className="flex items-center gap-3">

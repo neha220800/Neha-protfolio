@@ -4,7 +4,7 @@ import { Award, Code2, GraduationCap, Briefcase, Sparkles, Star, Zap, Trophy } f
 
 const stats = [
   { label: 'Academic CGPA', value: 9.30, suffix: '', display: '9.30', icon: GraduationCap, color: '#D4AF37', accent: '#F3E5AB', emoji: '🎓' },
-  { label: 'Projects Built', value: 2, suffix: '+', display: '2+', icon: Code2, color: '#06B6D4', accent: '#67E8F9', emoji: '💻' },
+  { label: 'Projects Built', value: 3, suffix: '+', display: '3+', icon: Code2, color: '#06B6D4', accent: '#67E8F9', emoji: '💻' },
   { label: 'Certifications', value: 2, suffix: '', display: '2', icon: Award, color: '#8B5CF6', accent: '#C4B5FD', emoji: '📜' },
   { label: 'Leadership Roles', value: 3, suffix: '', display: '3', icon: Briefcase, color: '#EC4899', accent: '#F9A8D4', emoji: '🌟' },
 ];
